@@ -101,9 +101,9 @@ export const Form = () => {
                             <div item xs={6} style={{ padding: "5px" }}>
                                 <div className='flex flex-col'>
                                     <label className='font-semibold'>Product Description</label>
-                                    <input
+                                    <textarea
                                         type="text"
-                                        style={{ height: "25px", width: "380px" }}
+                                        style={{ height: "25px", width: "380px", border: "1px solid gray", borderRadius: "2px" }}
                                         value={product.productDescription}
                                         onChange={(e) => handleInputChange(product.id, 'productDescription', e.target.value)}
                                     /></div>
@@ -191,7 +191,7 @@ export const Form = () => {
                         <thead>
                             <tr>
                                 <th className="border border-gray-400 px-2 py-2">Serial No.</th>
-                                <th className="border border-gray-400 px-4 py-2">Product Description</th>
+                                <th className="border border-gray-400 px-4 py-2 max-w-[300px]">Product Description</th>
                                 <th className="border border-gray-400 px-4 py-2">Unit Price</th>
                                 <th className="border border-gray-400 px-4 py-2">Quantity</th>
                                 <th className="border border-gray-400 px-4 py-2">Total Price</th>
@@ -201,7 +201,7 @@ export const Form = () => {
                             {products.map((product) => (
                                 <tr>
                                     <td className="border border-gray-400 px-2 py-2">{product.id}</td>
-                                    <td className="border border-gray-400 px-4 py-2">
+                                    <td className="border border-gray-400 px-4 py-2 max-w-[300px]">
                                         {product.productDescription}
                                     </td>
                                     <td className="border border-gray-400 px-4 py-2">{product.unitPrice}</td>
