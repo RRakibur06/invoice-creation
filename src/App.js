@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+// import html2pdf from 'html2pdf.js';
+// import html2pdf from 'html2pdf.js/dist/html2pdf.min.js';
 import './App.css';
+import { Form } from './components/Form';
+import InvoicePage from './components/InvoicePage';
+import InvoicePageTwo from './components/InvoicePageTwo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <InvoicePage /> */}
+      <Form />
     </div>
   );
 }
