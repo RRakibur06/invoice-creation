@@ -45,13 +45,13 @@ export const Form = () => {
         setProducts(products.map(q => q.id === id ? { ...q, [field]: value } : q));
     };
 
-    const handleSubmit = () => {
-        setData((prevData) => ({
-            ...prevData,
-            ['products']: products,
-        }));
-        console.log(data);
-    }
+    // const handleSubmit = () => {
+    //     setData((prevData) => ({
+    //         ...prevData,
+    //         ['products']: products,
+    //     }));
+    //     console.log(data);
+    // }
 
     useEffect(() => {
         const element = document.getElementById('html-content'); // Replace with your actual HTML content ID
@@ -159,8 +159,8 @@ export const Form = () => {
                         <div>
                             {/* <img src="/star-tech-logo.png" alt="Star Tech Logo" className="h-12" /> */}
                             <div className='flex items-end mb-4'>
-                                <p className='text-5xl text-blue-500 font-extrabold'>ST</p>
-                                <p className='text-blue-500 mb-[-12px]'>Traders</p>
+                                <p className='text-6xl text-blue-500 font-extrabold'>ST</p>
+                                <p className='text-blue-500 mb-[-12px] text-base'>Traders</p>
                             </div>
                             <address className="not-italic">
                                 Importer, Supplier, Sales & Service Center<br />
